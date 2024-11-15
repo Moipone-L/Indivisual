@@ -1,0 +1,166 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+h1 {
+  font-size: 24px;
+  font-weight: bold;
+  color: rgb(11, 11, 11);
+  margin-bottom: 20px;
+}
+
+@keyframes scrollEffect {
+  0% {
+    transform: translateX(100%); 
+  }
+  100% {
+    transform: translateX(-100%); 
+  }
+}
+
+
+h1 {
+  font-size: 2rem; 
+  white-space: nowrap; 
+  animation: scrollEffect 10s linear infinite; 
+}
+
+
+
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #0cc61c; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+}
+
+
+.form-container {
+  background-color: #ffffff; 
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 400px;
+  text-align: center;
+}
+
+
+.form-container h2 {
+  color: #333333;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="date"],
+input[type="tel"] {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 15px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus,
+input[type="date"]:focus,
+input[type="tel"]:focus {
+  border-color: #00796b; 
+  outline: none;
+}
+
+
+label {
+  display: block;
+  font-size: 14px;
+  margin-bottom: 5px;
+  text-align: left;
+}
+
+
+button {
+  width: 100%;
+  padding: 12px;
+  background-color: #db158c; 
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #004d40; 
+}
+
+
+.error-message {
+  color: red;
+  font-size: 12px;
+  margin-top: -10px;
+  margin-bottom: 15px;
+}
+
+
+button[type="submit"] {
+  margin-top: 20px;
+}
+
+
+.form-container .form-group {
+  margin-bottom: 15px;
+}
+/* Style for the container to hold the buttons */
+.auth-buttons {
+  display: flex; /* Use flexbox to align buttons */
+  justify-content: space-between; /* Space out buttons equally */
+  gap: 20px; /* Adjust the gap between the buttons */
+  margin-top: 20px; /* Add some space from the top */
+}
+
+/* Style for the Register button */
+.btn-register {
+  background-color: #4CAF50; /* Green background */
+  color: white; /* White text */
+  padding: 10px 20px; /* Padding inside the button */
+  border: none; /* No border */
+  border-radius: 5px; /* Rounded corners */
+  font-size: 16px; /* Adjust font size */
+  cursor: pointer; /* Change cursor on hover */
+  transition: background-color 0.3s ease; /* Smooth transition on hover */
+}
+
+/* Style for the Login button */
+.btn-login {
+  background-color: #2196F3; /* Blue background */
+  color: white; /* White text */
+  padding: 10px 20px; /* Padding inside the button */
+  border: none; /* No border */
+  border-radius: 5px; /* Rounded corners */
+  font-size: 16px; /* Adjust font size */
+  cursor: pointer; /* Change cursor on hover */
+  transition: background-color 0.3s ease; /* Smooth transition on hover */
+}
+
+/* Add hover effect for the buttons */
+.btn-register:hover {
+  background-color: #45a049; /* Darker green on hover */
+}
+
+.btn-login:hover {
+  background-color: #0b7dda; /* Darker blue on hover */
+}
+
